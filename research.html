@@ -73,6 +73,7 @@
 
 	<ol>
 		<li><a href="#NIPS2016">Crowdsourced Clustering: Querying Edges vs Triangles</a>, NIPS 2016. [<a href="CrowdsourcedClusteringQuerying_KVH.pdf">pdf</a>]</li>
+		<li><a href="#ICASSP2017">Tensor-based crowdsourced clustering via triangle queries</a>, ICASSP 2017. [<a href="TensorEmbeddingTriangleQuery_KVH_ICASSP17.pdf">pdf</a>]</li>
 		<li><a href="#ISIT2016">Similarity Clustering in the Presence of Outliers: Exact Recovery via Convex Program</a>, ISIT 2016. [<a href="SimilarityClustering_KVH.pdf">pdf</a>][<a href="similarityclusteringcode.zip">code</a>] </li>
 		<li><a href="#NIPS2014">Graph Clustering With Missing Data: Convex Algorithms and Analysis</a>, NIPS 2014.  [<a href="GraphClusteringWithMissingData_KVOH.pdf">pdf</a>] </li>
 		<li><a href="#ICASSP2014">Sharp Performance Bounds for Graph Clustering via Convex Optimization</a>, ICASSP 2014. [<a href="SharpPerformanceBounds_GraphClustering_KVOH.pdf">pdf</a>] </li>
@@ -106,6 +107,19 @@ provide a sufficient condition on the number of observations, edge densities
 inside and outside the clusters and the minimum cluster size required for the
 exact recovery of the true adjacency matrix via triangle queries using a convex
 optimization-based clustering algorithm.
+  </li>
+	    </ul>
+    </br>
+
+    <h4> <a name="ICASSP2017"  href="CrowdsourcedClusteringQuerying_KVH.pdf">
+Tensor-based crowdsourced clustering via triangle queries</a></h4>
+	    <ul class="nonesp">
+	    <li> Ramya Korlakai Vinayak, Tijana Zrnic, Babak Hassibi.</li>
+	    <li> 42nd International Conference on Acoustics, Speech, and Signal Processing (ICASSP) 2017, New Orleans.</li>
+	    </ul>
+	    <ul class="embed">
+            <li>
+    We consider the problem of crowdsourced clustering of a set of items based on queries of the similarity of triple of objects. Such an approach, called triangle queries, where it was shown that, for a fixed query budget, it outperforms clustering based on edge queries (i.e, comparing pairs of objects). In [1] the clustering algorithm for triangle and edge queries was identical and each triangle query response was treated as 3 separate edge query responses. In this paper we directly exploit the triangle structure of the responses by embedding them into a 3-way tensor. Since there are 5 possible responses to each triangle query, it is a priori not clear how best to embed them into the tensor. We give sufficient conditions on non-trivial embedding such that the resulting tensor has a rank equal to the underlying number of clusters (akin to what happens with the rank of the adjacency matrix). We then use an alternating least squares tensor decomposition algorithm to cluster a noisy and partially observed tensor and show, through extensive numerical simulations, that it significantly outperforms methods that make use only of the adjacency matrix.
   </li>
 	    </ul>
     </br>

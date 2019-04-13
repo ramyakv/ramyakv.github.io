@@ -44,9 +44,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="research.html">Research</a></li>
-				<li><a href="academics.html">Academics</a></li>
-               <!-- <li><a href="activities.html">Activities</a></li> --!>
-				<li><a href="resume.html">Resume</a></li>
+		<li><a href="resume.html">Resume</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             <br class="clear" />&nbsp;
@@ -64,7 +62,7 @@
 	<h3>Areas of Interest</h3>
 	<hr>
 	<ul> 
-	<li> Clustering, Crowdsourcing, Convex Optimization, Machine Learning, Statistical Inference. </li>
+	<li> Machine Learning, Statistical Inference, Clustering, Crowdsourcing, Convex Optimization. </li>
 	</ul>
 <br/>
 
@@ -72,6 +70,8 @@
 	<hr>
 
 	<ol>
+		<li><a href="#arXiv2019">Maximum Likelihood Estimation for Learning Populations of Parameters</a>, arxiv 2019. [<a href="MLE_for_Learning_Population_of_Parameters.pdf">pdf</a>]</li>
+		<li><a href="#WWW2019">The Illusion of Change: Correcting for Bias when Inferring Changes in Sparse, Societal-Scale Data</a>, The Web Conference 2019. [<a href="TheIllusionOfChange.pdf">pdf</a>]</li>
 		<li><a href="#NIPS2016">Crowdsourced Clustering: Querying Edges vs Triangles</a>, NIPS 2016. [<a href="CrowdsourcedClusteringQuerying_KVH.pdf">pdf</a>]</li>
 		<li><a href="#ICASSP2017">Tensor-based crowdsourced clustering via triangle queries</a>, ICASSP 2017. [<a href="TensorEmbeddingTriangleQuery_KVH_ICASSP17.pdf">pdf</a>]</li>
 		<li><a href="#ISIT2016">Similarity Clustering in the Presence of Outliers: Exact Recovery via Convex Program</a>, ISIT 2016. [<a href="SimilarityClustering_KVH.pdf">pdf</a>][<a href="similarityclusteringcode.zip">code</a>] </li>
@@ -79,10 +79,74 @@
 		<li><a href="#ICASSP2014">Sharp Performance Bounds for Graph Clustering via Convex Optimization</a>, ICASSP 2014. [<a href="SharpPerformanceBounds_GraphClustering_KVOH.pdf">pdf</a>] </li>
 	</ol>
 
+<h4> <a name="arXiv2019"  href="MLE_for_Learning_Population_of_Parameters.pdf">Maximum Likelihood Estimation for Learning Populations of Parameters</a></h4>
+	    <ul class="nonesp">
+		    <li> <b>Ramya Korlakai Vinayak</b>, Weihao Kong, Gregory Valiant, Sham Kakade.</li>
+	    </ul>
+	    <ul class="embed">
+            <li>
+Consider a setting with $N$ independent individuals, each with an unknown
+parameter, $p_i \in [0, 1]$ drawn from some unknown distribution $P^\star$.
+After observing the outcomes of $t$ independent Bernoulli trials, i.e., $X_i
+	 \sim \text{Binomial}(t, p_i)$ per individual, our objective is to
+	 accurately estimate $P^\star$. This problem arises in numerous
+	 domains, including the social sciences, psychology, health-care, and
+	 biology, where the size of the population under study is usually large
+	 while the number of observations per individual is often limited. 
+
+Our main result shows that, in the regime where $t &#60;&#60;N$, the maximum
+	 likelihood estimator (MLE) is both statistically minimax optimal and
+	 efficiently computable. Precisely, for sufficiently large $N$, the MLE
+	 achieves the information theoretic optimal error bound of
+	 $\mathcal{O}(\frac{1}{t})$ for $t &#60; c\log{N}$, with regards to the
+	 earth mover's distance (between the estimated and true distributions).
+	 More generally, in an exponentially large interval of $t$ beyond $c
+	 \log{N}$, the MLE achieves the minimax error bound of
+	 $\mathcal{O}(\frac{1}{\sqrt{t\log N}})$. In contrast, regardless of
+	 how large $N$ is, the naive "plug-in" estimator for this problem only
+	 achieves the sub-optimal error of $\Theta(\frac{1}{\sqrt{t}})$.
+  </li>
+	    </ul>
+    </br>
+
+
+
+
+	<h4> <a name="WWW2019"  href="TheIllusionOfChange.pdf">The Illusion of Change: Correcting for Bias when Inferring Changes in Sparse, Societal-Scale Data</a></h4>
+	    <ul class="nonesp">
+		    <li> Gabriel Cadamuro, <b>Ramya Korlakai Vinayak</b>, Joshua Blumenstock, Sham Kakade, Jacob N. Shapiro.</li>
+	    <li> The Web Conference 2019, San Francisco, CA, USA.</li>
+	    </ul>
+	    <ul class="embed">
+            <li>
+Societal-scale data is playing an increasingly prominent role in social science
+research; examples from research on geopolitical events include questions on
+how emergency events impact the diffusion of information or how new policies
+change patterns of social interaction. Such research often draws critical
+inferences from observing how an exogenous event changes meaningful metrics
+like network degree or network entropy. However, as we show in this work,
+standard estimation methodologies make systematically incorrect inferences when
+the event also changes the sparsity of the data.
+
+To address this issue, we provide a general framework for inferring changes in
+social metrics when dealing with non-stationary sparsity. We propose a plug-in
+correction that can be applied to any estimator, including several recently
+proposed procedures. Using both simulated and real data, we demonstrate that
+the correction significantly improves the accuracy of the estimated change
+under a variety of plausible data generating processes. In particular, using a
+large dataset of calls from Afghanistan, we show that whereas traditional
+methods substantially overestimate the impact of a violent event on social
+diversity, the plug-in correction reveals the true response to be much more
+modest.
+  </li>
+	    </ul>
+    </br>
+
+
     <h4> <a name="NIPS2016"  href="CrowdsourcedClusteringQuerying_KVH.pdf">
 Crowdsourced Clustering: Querying Edges vs Triangles </a></h4>
 	    <ul class="nonesp">
-	    <li> Ramya Korlakai Vinayak, Babak Hassibi.</li>
+		    <li> <b>Ramya Korlakai Vinayak</b>, Babak Hassibi.</li>
 	    <li> Neural Information Processing Systems (NIPS) 2016, Barcelona, Spain.</li>
 	    </ul>
 	    <ul class="embed">
@@ -114,7 +178,7 @@ optimization-based clustering algorithm.
     <h4> <a name="ICASSP2017"  href="CrowdsourcedClusteringQuerying_KVH.pdf">
 Tensor-based crowdsourced clustering via triangle queries</a></h4>
 	    <ul class="nonesp">
-	    <li> Ramya Korlakai Vinayak, Tijana Zrnic, Babak Hassibi.</li>
+		    <li> <b>Ramya Korlakai Vinayak</b>, Tijana Zrnic, Babak Hassibi.</li>
 	    <li> 42nd International Conference on Acoustics, Speech, and Signal Processing (ICASSP) 2017, New Orleans.</li>
 	    </ul>
 	    <ul class="embed">
@@ -128,7 +192,7 @@ Tensor-based crowdsourced clustering via triangle queries</a></h4>
     <h4> <a name="ISIT2016"  href="SimilarityClustering_KVH.pdf">
 Similarity Clustering in the Presence of Outliers: Exact Recovery via Convex Program </a></h4>
 	    <ul class="nonesp">
-	    <li> Ramya Korlakai Vinayak, Babak Hassibi.</li>
+		    <li> <b>Ramya Korlakai Vinayak</b>, Babak Hassibi.</li>
 	    <li> International Symposium on Information Theory (ISIT) 2016, Barcelona, Spain.</li>
 	    </ul>
 	    <ul class="embed">
@@ -151,7 +215,7 @@ Similarity Clustering in the Presence of Outliers: Exact Recovery via Convex Pro
         <h4> <a name="NIPS2014" href="GraphClusteringWithMissingData_KVOH.pdf">
 Graph Clustering With Missing Data: Convex Algorithms and Analysis </a></h4>
 	    <ul class="nonesp">
-	    <li> Ramya Korlakai Vinayak, Samet Oymak, Babak Hassibi.</li>
+		    <li> <b>Ramya Korlakai Vinayak</b>, Samet Oymak, Babak Hassibi.</li>
 	    <li> Neural Information Processing Systems (NIPS) 2014, Montreal, Canada.</li>
 	    </ul>
 	    <ul class="embed">
@@ -174,7 +238,7 @@ Turk.
         <h4><a name="ICASSP2014" href="SharpPerformanceBounds_GraphClustering_KVOH.pdf">
 Sharp Performance Bounds for Graph Clustering via Convex Optimization </a></h4>
 	    <ul class="nonesp">
-	    <li> Ramya Korlakai Vinayak, Samet Oymak, Babak Hassibi.</li>
+		    <li> <b>Ramya Korlakai Vinayak</b>, Samet Oymak, Babak Hassibi.</li>
 	    <li> 38th International Conference on Acoustics, Speech, and Signal Processing (ICASSP) 2014, Florence, Italy.</li>
 	    </ul>
 	    <ul class="embed">

@@ -31,7 +31,7 @@
 	letter-spacing: 0px;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-variant: initial;
-	color: #9C3030;
+	color: #9C3030; /* Dark red */
 	}
 
 	h4 {
@@ -42,7 +42,7 @@
 	}
 
 	h2 {
-		padding: 10px 0 0 0;
+		padding: 10px 0 0 ;
 		word-spacing: 4px;
 		font-size: 1.30em;
 	}
@@ -99,6 +99,11 @@
 		color: #595959;
 		line-height: 1.5em;
 	}
+
+    ul.innerbullet{
+        list-style-type: none;
+        padding: 0 0 0.3em 1.0em;
+    }
 
 	/* Added by Ramya for Table */
 table.sample {
@@ -219,23 +224,23 @@ table.sample td {
 		}
 
 		#inner_header ul li a { 
-			background-color: #D9ECFD; 
+			background-color: #D9ECFD; /* light blue color buttons */
 			color: #000000; 
-			border-bottom: 1px solid #CAD9B2; 
+			border-bottom: 1px solid #CAD9B2; /* bottom boarder for buttons */
 			border-right: 1px solid #CAD9B2;
 		}
 		
 		#inner_header ul li a:hover { 
-			background-color: #844816; 
+			background-color: #844816; /* brown color for buttons */
 			/*background-color: #000000;*/
 			color: #FFFFFF;
 		}
 
 	/* content */
-	#inner_content { background-color: #FFFFFF; }      
+	#inner_content { background-color: #FFFFFF; } /*body content*/ 
 	
 		#content h1 { color: #595959; }
-		#content a { background-color: #FFFFFF; color: #0000FF; padding: 1px; }
+		#content a { background-color: #FFFFFF; color: #0000FF; padding: 1px; } /* links */
 		#content a:hover { background-color: #000000; color: #FFFFFF; }
 		
 		.image { background-color: #3B4629; }

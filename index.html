@@ -12,6 +12,24 @@
   gtag('config', 'UA-148833194-1');
 </script>
 	
+<script>
+		/**
+		* Function that captures a click on an outbound link in Analytics.
+		* This function takes a valid URL string as an argument, and uses that URL string
+		* as the event label. Setting the transport method to 'beacon' lets the hit be sent
+		* using 'navigator.sendBeacon' in browser that support it.
+		*/
+		var captureOutboundLink = function(url) {
+		   ga('send', 'event', 'outbound', 'click', url, {
+			 'transport': 'beacon'
+		   });
+			 // 'hitCallback': function(){document.location = url;}
+		   //});
+		   return false;
+		}
+	</script>
+
+	
     <title>Ramya's Home Page</title>
     <!-- version 1.0 - released Apr 14, 2007 -->
 
@@ -114,7 +132,7 @@ major in Electrical Engineering and a minor in Physics. </a> </p>
     <h3>Publications</h3>
 
 	<ul>
-		<li><a href="http://proceedings.mlr.press/v97/vinayak19a.html">"Maximum Likelihood Estimation for Learning Populations of Parameters"</a></li>
+		<li><a href="http://proceedings.mlr.press/v97/vinayak19a.html" target="_blank" onclick="captureOutboundLink('http://proceedings.mlr.press/v97/vinayak19a.html');">"Maximum Likelihood Estimation for Learning Populations of Parameters"</a></li>
 			<ul class="innerbullet"> 
 				<li><b>Ramya Korlakai Vinayak</b>, Weihao Kong, Gregory Valiant, Sham Kakade</li>
 				<li><i>ICML</i>, 2019. </li>
